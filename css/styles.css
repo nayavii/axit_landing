@@ -9,7 +9,32 @@ body {
 .container {
   width: 1170px;
   padding: 0 15px;
+  margin: auto;
+}
+
+/* buttons */
+
+.btn_white {
   margin: 0 auto;
+  display: block;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  border: 2px solid #FFF;
+  width: 370px;
+  height: 58px;
+}
+
+.btn_white:hover {
+  color: #EC7979;
+  border: 2px solid #EC7979;
+}
+
+.btn_white:active {
+  color: #ffffff;
+  background-color: #AB4949;
+  border: 2px solid #AB4949;
 }
 
 /* heading style */
@@ -21,9 +46,9 @@ body {
 .heading h2 {
   font-size: 36px;
   line-height: 42px;
-  font-weight: 400;
   text-transform: uppercase;
 }
+
 
 .heading__line {
   border: 1px solid #EC7979;
@@ -31,10 +56,18 @@ body {
   margin: 54px auto 40px;
 }
 
+.heading__line_white {
+  border: 1px solid #ffffff;
+}
+
 .heading p {
-  line-height: 21px;
   color: #86878B;
 }
+
+.heading_white h2, .heading_white p {
+  color: #FFFFFF;
+}
+
 
 /* about section */
 
@@ -46,11 +79,11 @@ body {
   display: flex;
   margin-top: 110px;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .about__item {
   text-align: center;
-  width: 370px;
 }
 
 .about__item__title {
@@ -60,11 +93,6 @@ body {
   line-height: 33px;
   margin: 73px 0 41px;
 }
-
-.about__item__text {
-  padding: 0 15px;
-}
-
 
 /* pricing section */
 
@@ -78,6 +106,7 @@ body {
   justify-content: space-between;
   margin-top: 79px;
   text-align: center;
+  column-gap: 30px;
 }
 
 .pricing__item {
@@ -133,6 +162,7 @@ body {
   margin-top: 83px;
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .reviews__item {
@@ -178,4 +208,15 @@ body {
   line-height: 33px;
 }
 
+/* banner section */
+
+.banner {
+  padding: 104px 0 50px;
+  background: #413A38 url(../img/banner_1.jpg) no-repeat center center;
+}
+
+.banner .btn_white {
+  margin-top: 73px;
+
+}
 
