@@ -8,7 +8,6 @@ body {
 
 .container {
   width: 1170px;
-  padding: 0 15px;
   margin: auto;
 }
 
@@ -84,6 +83,7 @@ body {
 
 .about__item {
   text-align: center;
+  width: 370px;
 }
 
 .about__item__title {
@@ -106,7 +106,7 @@ body {
   justify-content: space-between;
   margin-top: 79px;
   text-align: center;
-  column-gap: 30px;
+  gap: 30px;
 }
 
 .pricing__item {
@@ -217,6 +217,5 @@ body {
 
 .banner .btn_white {
   margin-top: 73px;
-
 }
 
