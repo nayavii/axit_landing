@@ -9,7 +9,56 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <section class="about">
+  <header class="header">
+    <div class="container">
+      <div class="header__logo"><img src="./img/logo.svg" alt="AXIT"></div>
+      <nav class="header__menu">
+        <a href="#">Features</a>
+        <a href="#about__menu">About</a>
+        <a href="#pricing__menu">Pricing</a>
+        <a href="#reviews__menu">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="main__offer">
+        <div class="main__logo"><img src="./img/logo.svg" alt="AXIT"></div>
+        <h1>MODERN AXURE TEMPLATE <br> FOR BEAUTIFUL <br> PROTOTYPES</h1>
+        <div class="main__offer__line heading__line_white"></div>
+        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
+        <button class="main__btn btn_white">Download</button>
+      </div>
+      <form class="main__form form">
+        <legend>Try Your <span>FREE</span> Trial Today</legend>
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="" placeholder="Password">
+        <button>Get Started</button>
+      </form>
+    </div>
+  </main>
+  <section class="social">
+    <div class="container">
+      <div class="social__info">
+        <h3>Social Media</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+          Aenean euismod bibendum laoreet.</p>
+      </div>
+      <div class="social__icons">
+        <a href="#"><img src="/img/icons/facebook_icon.svg" alt="Facebook"></a>
+        <a href="#"><img src="/img/icons/twitter_icon.svg" alt="Twitter"></a>
+        <a href="#"><img src="/img/icons/linkedin_icon.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="/img/icons/pinterest_icon.svg" alt="Pinterest"></a>
+        <a href="#"><img src="/img/icons/instagram_icon.svg" alt="Instagram"></a>
+        <a href="#"><img src="/img/icons/github_icon.svg" alt="Git Hub"></a>
+        <a href="#"><img src="/img/icons/rss_icon.svg" alt="RSS"></a>
+      </div>
+
+    </div>
+  </section>
+  <section class="about" id="about__menu">
     <div class="container">
       <div class="heading">
         <h2>WHY THIS IS AWESOME</h2>
@@ -39,7 +88,7 @@
     </div>
     
   </section>
-  <section class="pricing">
+  <section class="pricing" id="pricing__menu">
     <div class="container">
       <div class="heading">
         <h2>pricing options</h2>
@@ -110,7 +159,7 @@
       </div>
     </div>
   </section>
-  <section class="reviews">
+  <section class="reviews" id="reviews__menu">
     <div class="container">
       <div class="heading">
         <h2>what our customers are saying</h2>
@@ -172,7 +221,45 @@
       <div class="heading__line heading__line_white "></div>
       <p>Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
     </div>
-    <button class="btn_white">Download</button>
+    <button class="banner__btn btn_white">Download</button>
   </section>
+  <section class="contact">
+    <div class="container">
+      <div class="heading">
+        <h2>contact us</h2>
+        <div class="heading__line"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="contact__form__wrapper" id="contact">
+        <form class="contact__form form" action="#">
+          <div class="contact__form__inf">
+            <div class="left">
+              <input type="text" name="username" placeholder="Имя">
+              <input type="email" name="email" placeholder="Email">
+              <input type="password" name="password" placeholder="Password">
+            </div>
+            <div class="right">
+              <textarea name="text" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <button type="submit" name="submitbtn" value="subm">Send Message</button>
+          
+        </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__icons">
+        <a href="#"><img src="/img/icons/facebook_icon.svg" alt="Facebook"></a>
+        <a href="#"><img src="/img/icons/twitter_icon.svg" alt="Twitter"></a>
+        <a href="#"><img src="/img/icons/linkedin_icon.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="/img/icons/pinterest_icon.svg" alt="Pinterest"></a>
+        <a href="#"><img src="/img/icons/instagram_icon.svg" alt="Instagram"></a>
+        <a href="#"><img src="/img/icons/github_icon.svg" alt="Git Hub"></a>
+        <a href="#"><img src="/img/icons/rss_icon.svg" alt="RSS"></a>
+      </div>
+      <p>© 2015 Axure Themes</p>
+    </div>
+  </footer>
 </body>
 </html>

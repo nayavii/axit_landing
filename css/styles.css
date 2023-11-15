@@ -14,26 +14,68 @@ body {
 /* buttons */
 
 .btn_white {
-  margin: 0 auto;
   display: block;
   color: #FFF;
-  text-align: center;
   font-family: 'Open Sans';
   font-weight: 600;
   border: 2px solid #FFF;
-  width: 370px;
-  height: 58px;
 }
 
 .btn_white:hover {
   color: #EC7979;
   border: 2px solid #EC7979;
+  transition: all .5s ease;
 }
 
 .btn_white:active {
   color: #ffffff;
   background-color: #AB4949;
   border: 2px solid #AB4949;
+}
+
+/* form */
+
+.form input[type="text"], 
+.form input[type="email"], 
+.form input[type="password"],
+.form textarea {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 19px;
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 15px;
+  outline: none;
+}
+
+.form input[type="text"]::placeholder, 
+.form input[type="email"]::placeholder, 
+.form input[type="password"]::placeholder,
+.form textarea::placeholder {
+  color: #BDBDBD;
+}
+
+.form button, .tabs__btn {
+  display: block;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  background: #EC7979;
+  border: none;
+  color: #fff;
+}
+
+.form button:hover, 
+.tabs__btn:hover {
+  background: #AB4949;
+  transition: all .5s ease;
+}
+
+.form button:active,
+.tabs__btn:active {
+  background: #EC7979;
+  box-shadow: inset 0px 0px 10px #AB4949;
 }
 
 /* heading style */
@@ -65,6 +107,142 @@ body {
 
 .heading_white h2, .heading_white p {
   color: #FFFFFF;
+}
+
+/* header */
+
+.header {
+  background-color: #000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 87px;
+}
+
+.header__menu a {
+  width: 114px;
+  font-family: 'Open Sans';
+  padding: 30px 0 24px 0;
+
+  font-size: 14px;
+  font-weight: 600; 
+  display: inline-block;
+  color: #FFF;
+  text-align: center;
+}
+
+.header__menu a:hover {
+  background: #EC7979;
+  transition: all .5s ease;
+}
+
+.header__menu a:active {
+  background: #AB4949;
+}
+
+/* main section */
+
+.main {
+  background: #000 url(/img/main_bg.jpg) no-repeat bottom center / cover;
+  padding: 207px 0 185px 0;
+}
+
+.main .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__offer {
+  margin-top: 23px;
+  color: #FFF;
+}
+
+.main__offer h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin: 50px 0 55px 0;
+  line-height: 56px;
+}
+
+.main__logo img, .main__offer__line {
+  width: 170px;
+}
+
+.main__offer p {
+  margin: 42px 0 42px 0;
+}
+
+.main__btn {
+  padding: 15px 90px;
+}
+
+.main__form {
+  width: 470px;
+  height: 450px;
+  border-radius: 10px;
+  background: #FFF; 
+  text-align: center;
+}
+
+.main__form legend {
+  color: #333333;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 33px;
+  margin:29px 0 73px;
+}
+
+.main__form legend span {
+  color: #EC7979;
+}
+
+.main__form input {
+  width: 370px;
+  margin-bottom: 33px;
+}
+
+.main__form button {
+  width: 100%;
+  margin-top: 45px;
+  padding: 20px 0;
+  border-radius: 0px 0px 10px 10px;
+}
+
+
+
+
+/* social section */
+
+.social {
+  padding: 16px 0 18px 0;
+  background: #F8EFEF;
+}
+
+.social .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__info h3 {
+  color: #333;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 31px;
+}
+
+.social__icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 
@@ -111,11 +289,15 @@ body {
 
 .pricing__item {
   width: 370px;
+  transition: all 0.8s ease 0s;
+  
 }
 
 .pricing__item:hover {
   filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
-  margin-top: -20px;
+  transform: translate(0px, -20px);
+  
+  
 }
 
 .pricing__item__title, .pricing__item__value, .pricing__item__free-for {
@@ -215,7 +397,70 @@ body {
   background: #413A38 url(../img/banner_1.jpg) no-repeat center center;
 }
 
-.banner .btn_white {
-  margin-top: 73px;
+.banner .heading {
+  margin-bottom: 73px;
+}
+
+.banner__btn {
+  padding: 15px 140px;
+  margin: 0 auto;
+}
+
+/* contact section */
+
+.contact {
+  padding: 107px 0 50px;
+}
+
+.contact__form__inf {
+  display: flex;
+  justify-content: space-between;
+  margin: 72px 0 0;
+}
+
+.contact__form input[type="text"], 
+.contact__form input[type="email"], 
+.contact__form input[type="password"] {
+  width: 571px;
+  margin-bottom: 50px; 
+}
+
+.contact__form input[type="text"]::placeholder {
+  color: #BDBDBD;
+}
+
+.contact__form textarea {
+  width: 569px;
+  overflow: hidden;
+  resize: none;
+}
+
+.contact__form button {
+  padding: 20px 0;
+  width: 370px;
+  margin: auto;
+}
+
+/* footer */
+
+.footer {
+  padding: 35px 0 27px 0;
+  background: #000;
+  text-align: center;
+}
+
+.footer__icons a {
+  display: inline-block;
+  width: 53px;
+  margin-right: 32px;
+}
+
+.footer__icons a:last-child {
+  margin-right: 0;
+}
+
+.footer p {
+  margin-top: 27px;
+  color: rgba(255, 255, 255, 0.50);
 }
 
