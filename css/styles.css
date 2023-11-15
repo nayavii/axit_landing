@@ -433,6 +433,7 @@ body {
   width: 569px;
   overflow: hidden;
   resize: none;
+  padding-bottom: 172px;
 }
 
 .contact__form button {
