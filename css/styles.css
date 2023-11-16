@@ -16,7 +16,7 @@ body {
 .btn_white {
   display: block;
   color: #FFF;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   border: 2px solid #FFF;
 }
@@ -39,7 +39,7 @@ body {
 .form input[type="email"], 
 .form input[type="password"],
 .form textarea {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 19px;
   border: none;
@@ -57,7 +57,7 @@ body {
 
 .form button, .tabs__btn {
   display: block;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
@@ -127,9 +127,8 @@ body {
 
 .header__menu a {
   width: 114px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   padding: 30px 0 24px 0;
-
   font-size: 14px;
   font-weight: 600; 
   display: inline-block;
@@ -192,7 +191,7 @@ body {
 
 .main__form legend {
   color: #333333;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
@@ -216,9 +215,6 @@ body {
   border-radius: 0px 0px 10px 10px;
 }
 
-
-
-
 /* social section */
 
 .social {
@@ -233,7 +229,7 @@ body {
 
 .social__info h3 {
   color: #333;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 31px;
@@ -250,7 +246,7 @@ body {
 .tabs {
   padding: 99px 0 50px;
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
 }
 
 label input {
@@ -258,12 +254,12 @@ label input {
 }
 
 label{
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 19px;
   text-align: center;
-  padding:10px 73px;
-  cursor:pointer;
+  padding: 10px 73px;
+  cursor: pointer;
   color:#333333;
 }
 
@@ -280,7 +276,7 @@ label{
 label:has(input[type="radio"]:checked){
   color:#333333;
   border-top: 1px #C6CBCD solid;
-  border-left:  1px #C6CBCD solid;
+  border-left: 1px #C6CBCD solid;
   border-right: 1px #C6CBCD solid; ;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -288,7 +284,7 @@ label:has(input[type="radio"]:checked){
 }
 
 label:has(input[type="radio"]:checked) + .tabs__content{
-  display:initial;
+  display: initial;
 }
 
 label:has(input[type="radio"]:checked):after{
@@ -315,7 +311,7 @@ label:has(input[type="radio"]:checked):after{
 }
 
 .tabs__content h3 {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 41px;
@@ -354,7 +350,7 @@ label:has(input[type="radio"]:checked):after{
 }
 
 .about__item__title {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
@@ -379,14 +375,11 @@ label:has(input[type="radio"]:checked):after{
 .pricing__item {
   width: 370px;
   transition: all 0.8s ease 0s;
-  
 }
 
 .pricing__item:hover {
   filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
   transform: translate(0px, -20px);
-  
-  
 }
 
 .pricing__item__title, .pricing__item__value, .pricing__item__free-for {
@@ -395,7 +388,7 @@ label:has(input[type="radio"]:checked):after{
 }
 
 .pricing__item__title {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
@@ -473,7 +466,7 @@ label:has(input[type="radio"]:checked):after{
 
 .reviews__item__author p {
   margin: 11px 0 25px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
@@ -553,4 +546,3 @@ label:has(input[type="radio"]:checked):after{
   margin-top: 27px;
   color: rgba(255, 255, 255, 0.50);
 }
-
