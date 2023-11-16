@@ -245,6 +245,95 @@ body {
   gap: 30px;
 }
 
+/* features section */
+
+.tabs {
+  padding: 99px 0 50px;
+  display: flex;
+  flex-wrap: wrap ;
+}
+
+label input {
+  display: none;
+}
+
+label{
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  padding:10px 73px;
+  cursor:pointer;
+  color:#333333;
+}
+
+.tabs__content{
+  order: 1;
+  width: 100%;
+  display: none;
+  border: 1px #C6CBCD solid;
+  position: relative;
+  padding: 42px 0 50px 100px;
+  z-index: -1;
+}
+
+label:has(input[type="radio"]:checked){
+  color:#333333;
+  border-top: 1px #C6CBCD solid;
+  border-left:  1px #C6CBCD solid;
+  border-right: 1px #C6CBCD solid; ;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative; 
+}
+
+label:has(input[type="radio"]:checked) + .tabs__content{
+  display:initial;
+}
+
+label:has(input[type="radio"]:checked):after{
+  content:'';
+  display: block;
+  width: 183px;
+  border-bottom: 2px #FFF solid;
+  left: 0;
+  bottom: -1px;
+  position: absolute;
+  z-index: 2;
+}
+
+.tabs__content img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 500px;
+}
+
+.tabs__content div {
+  width: 570px;
+  box-sizing: border-box;
+}
+
+.tabs__content h3 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.tabs__content p {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 60px 0 37px;
+}
+
+.tabs__btn {
+  display: inline-block;
+  padding: 17.5px 91px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+}
 
 /* about section */
 
@@ -433,7 +522,7 @@ body {
   width: 569px;
   overflow: hidden;
   resize: none;
-  padding-bottom: 172px;
+  padding-bottom: 173px;
 }
 
 .contact__form button {
