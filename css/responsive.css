@@ -239,11 +239,11 @@ label:has(input[type="radio"]:checked):after{
 .contact__form input[type="text"], 
 .contact__form input[type="email"], 
 .contact__form input[type="password"] {
-  width: 486px;
+  width: 450px;
 }
 
 .contact__form textarea {
-  width: 486px;
+  width: 450px;
   padding-bottom: 166px;
 }
 
@@ -279,13 +279,13 @@ label:has(input[type="radio"]:checked):after{
 
   /* header */
 
-.header__logo img {
-  width: 60px;
-}
+  .header__logo img {
+    width: 64px;
+  }
 
-.header__menu a {
-  width: 90px;
-}
+  .header__menu a {
+    width: 90px;
+  } 
 
   /* main section */
 
@@ -296,7 +296,7 @@ label:has(input[type="radio"]:checked):after{
   }
 
   .main__logo img, .main__offer__line {
-    width: 100px;
+    width: 134px;
   }
 
   .main__offer p {
@@ -324,19 +324,25 @@ label:has(input[type="radio"]:checked):after{
 
   /* social section */
 
+  .social {
+    padding: 41px 0 44px 0;
+  }
+
   .social .container {
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 
   .social__info h3 {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .social__icons {
     display: flex;
     justify-content: space-between;
     gap: 45px;
-    margin-top: 10px;
+    margin-top: 32px;
   }
 
   .social__icons a img {
@@ -383,6 +389,10 @@ label:has(input[type="radio"]:checked):after{
 
   /* about section */
 
+  .about {
+    padding: 76px 0 50px;
+  }
+
   .about__cards {
     margin-top: 55px;
     gap: 15px;
@@ -393,7 +403,7 @@ label:has(input[type="radio"]:checked):after{
   }
 
   .about__item img{
-    height: 70px;
+    height: 80px;
   }
 
   .about__item__title {
@@ -401,69 +411,42 @@ label:has(input[type="radio"]:checked):after{
     margin: 30px 0 25px;
   }
 
-  /* pricing section ТУТТТ */
+  /* pricing section */
 
   .pricing {
-    padding: 96px 0 50px;
-  }
-
-  .pricing__cards {
-    margin-top: 50px;
-    gap: 20px;
+    padding: 76px 0 50px;
   }
 
   .pricing__item {
-    width: 317px;
-  }
-
-  .pricing__item:hover {
-    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
-    transform: translate(0px, -20px);
+    width: 33%;
   }
 
   .pricing__item__title {
     padding: 10px 0;
+    font-size: 18px;
   }
 
   .pricing__item__value {
     padding: 23px 0;
+    font-size: 30px;
   }
 
   .pricing__item__free-for, .pricing__item ul li {
-    padding: 12px 0;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 15px;
   }
 
   /* reviews section */
 
   .reviews {
-    padding: 96px 0 57px;
+    padding: 76px 0 57px;
   }
 
   .reviews__cards {
-    margin-top: 32px;
-    gap: 20px;
-  }
-
-  .reviews__item {
-    width: 317px;
+    flex-wrap: wrap;
   }
 
   .reviews__item__comment {
     padding: 50px 33px;
-  }
-
-  .reviews__item__author img {
-    margin-right: 22px;
-    width: 63px;
-    height: 63px;
-  }
-
-  .reviews__item__author p {
-    margin: 6px 0 14px;
-    font-size: 18px;
-    line-height: 25px;
   }
 
   /* banner section */
@@ -477,46 +460,408 @@ label:has(input[type="radio"]:checked):after{
   }
 
   .banner__btn {
-    padding: 15px 123px;
+    padding: 15px 100px;
   }
 
   /* contact section */
 
   .contact {
-    padding: 96px 0 50px;
+    padding: 76px 0 50px;
   }
 
   .contact__form input[type="text"], 
   .contact__form input[type="email"], 
   .contact__form input[type="password"] {
-    width: 486px;
+    width: 330px;
   }
 
   .contact__form textarea {
-    width: 486px;
+    width: 330px;
     padding-bottom: 166px;
   }
 
   .contact__form button {
-    padding: 18px 0;
-    width: 318px;
+    font-size: 16px;
+    width: 300px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 540px;
+    padding: 0 15px;
+  }
+
+  /* heading style */
+
+  .heading h2 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+
+  .heading__line {
+    width: 134px;
+    margin: 49px auto 25px;
+  }
+
+  .heading p {
+    font-size: 13px;
+  }
+
+  /* header */
+
+  .header {
+    padding: 16px 0;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .header__menu a {
+    display: none;
+  }
+
+  /* main section */
+
+  .main {
+    padding: 84px 0 50px 0;
+    text-align: center;
+  }
+
+  .main .container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main__offer h1 {
+    font-size: 36px;
+    width: 288px;
+    margin: 0 auto 44px;
+  }
+
+  .main__offer__line {
+    margin: 0 auto;
+  }
+
+  .main__logo{
+    display: none;
+  }
+
+  .main__offer p {
+    margin: 28px 0 42px 0;
+  }
+
+  .main__offer p br {
+    display: none;
+  }
+
+  .main__btn {
+    padding: 15px 0;
+    margin: 0 auto 56px;
+    width: 100%;
+  }
+
+  .main__form {
+    width: 353px;
+    height: 381px;
+  }
+
+  .main__form legend {
+    margin: 35px 0;
+  }
+
+  .main__form input {
+    margin: 0px 24px 33px;
+    width: 100%;
+  }
+
+  .main__form button {
+    width: 100%;
+    margin-top: 23px;
+  }
+
+  /* social section */
+
+  .social__icons {
+    gap: 17px;
+  }
+
+  .social__icons a img {
+    width: 40px;
+  }
+
+  /* features section */
+
+  .tabs {
+    padding: 41px 0 50px;
+  }
+
+  .tabs__content{
+    padding: 30px 23px;
+    text-align: center;
+  }
+
+  label {
+    width: 33.3%;
+  }
+
+  label:has(input[type="radio"]:checked):after{
+    width: 169px;
+  }
+
+  .tabs__content img {
+    display: none;
+  }
+
+  .tabs__content div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tabs__content h3 {
+    font-size: 18px;
+  }
+
+  .tabs__content p {
+    margin: 60px 0 29px;
+  }
+
+  .tabs__btn {
+    font-size: 18px;
+    padding: 13px 80px;
+  }
+
+  /* about section */
+
+  .about {
+    padding: 0px 0 60px;
+  }
+
+  .about__cards {
+    flex-wrap: wrap;
+    margin-top: 83px;
+    justify-content: center;
+  }
+
+  .about__item {
+    width: 58%;
+    margin-bottom: 43px;
+  }
+
+  .about__item__title {
+    font-size: 18px;
+    margin: 62px 0 37px;
+  }
+
+  /* pricing section */
+
+  .pricing {
+    padding: 46px 0 26px;
+  }
+
+  .pricing__cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;
+  }
+
+  .pricing__item {
+    width: 60%;
+  }
+
+  .pricing__item__value {
+    padding: 25px 0;
+    font-size: 24px;
+  }
+
+  .pricing__item__free-for, .pricing__item ul li {
+    font-size: 14px;
+  }
+
+
+  /* reviews section */
+
+  .reviews {
+    padding: 46px 0 31px;
+  }
+
+  .reviews__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 30px;
+  }
+
+  .reviews__item__comment {
+    padding: 50px 18px;
+  }
+
+  .reviews__item__author {
+    margin-top: 62px;
+  }
+
+  .reviews__item__author img {
+    margin-right: 22px;
+    width: 57px;
+    height: 57px;
+  }
+
+  .reviews__item__author p {
+    margin: 9px 0 18px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  /* banner section */
+
+  .banner {
+    padding: 46px 90px 58px;
+  }
+
+  .banner .heading {
+    margin-bottom: 66px;
+  }
+
+  .banner__btn {
+    padding: 15px 90px;
+    font-size: 18px;
+  }
+
+  /* contact section */
+
+  .contact {
+    padding: 46px 0 40px;
+  }
+
+  .contact__form__inf {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .contact__form input[type="text"], 
+  .contact__form input[type="email"], 
+  .contact__form input[type="password"] {
+    width: 100%;
+  }
+
+  .contact__form textarea {
+    width: 504px;
+    padding-bottom: 182px;
+  }
+
+  .contact__form button {
+    font-size: 16px;
+    width: 300px;
   }
 
   /* footer */
 
   .footer {
-    padding: 38px 0 30px 0;
+    padding: 38px 0 45px 0;
   }
 
   .footer__icons a {
-    display: inline-block;
-    width: 46px;
-    margin-right: 27px;
+    width: 26px;
+    margin-right: 17px;
+  }
+
+  .footer__icons a:last-child {
+    margin-right: 0;
   }
 
   .footer p {
-    margin-top: 38px;
+    margin-top: 42px;
   }
   
+}
+
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+
+  /* main section */
+
+  .main__offer {
+    width: 100%;
+  }
+
+  .main__form {
+    width: 100%;
+  }
+
+  /* social section */
+
+  .social__icons a img {
+    width: 28px;
+  }
+
+  /* features section */
+
+
+  label {
+    width: 33.3%;
+  }
+
+  label:has(input[type="radio"]:checked):after{
+    width: 100%;
+    bottom: -1px;
+  }
+
+  .tabs__btn {
+    width: 100%;
+  }
+
+  /* about section */
+
+  .about__item {
+    width: 90%;
+  }
+
+
+  /* pricing section */
+
+  .pricing__item {
+    width: 90%;
+  }
+
+
+  /* reviews section */
+
+
+  .reviews__item {
+    width: 90%;
+  }
+
+  /* banner section */
+
+  .banner {
+    padding: 46px 0px 58px;
+  }
+
+  .banner__btn {
+    width: 100%;
+  }
+
+  /* contact section */
+
+
+  .contact__form textarea {
+    width: 400px;
+  }
+
+  .contact__form button {
+    width: 100%;
+  }
+
 }
   

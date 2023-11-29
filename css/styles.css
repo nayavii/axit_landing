@@ -125,6 +125,10 @@ body {
   width: 87px;
 }
 
+.header__burger {
+  display: none;
+}
+
 .header__menu a {
   width: 114px;
   font-family: 'Open Sans', sans-serif;
