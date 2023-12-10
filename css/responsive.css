@@ -10,7 +10,6 @@
     padding: 0 15px;
   }
 
-
   /* heading style */
 
 .heading h2 {
@@ -502,7 +501,6 @@ label:has(input[type="radio"]:checked):after{
     line-height: 21px;
   }
 
-
   .heading__line {
     width: 134px;
     margin: 49px auto 25px;
@@ -683,7 +681,6 @@ label:has(input[type="radio"]:checked):after{
     font-size: 14px;
   }
 
-
   /* reviews section */
 
   .reviews {
@@ -786,14 +783,11 @@ label:has(input[type="radio"]:checked):after{
   
 }
 
-
 @media screen and (max-width: 576px) {
   .container {
     width: 100%;
-    padding: 0 15px;
-    
+    padding: 0 15px; 
   }
-
 
   /* main section */
 
@@ -812,7 +806,6 @@ label:has(input[type="radio"]:checked):after{
   }
 
   /* features section */
-
 
   label {
     width: 33.3%;
@@ -833,17 +826,11 @@ label:has(input[type="radio"]:checked):after{
     width: 90%;
   }
 
-
   /* pricing section */
 
   .pricing__item {
     width: 90%;
   }
-
-
-  /* reviews section */
-
- 
 
   /* banner section */
 
@@ -856,7 +843,6 @@ label:has(input[type="radio"]:checked):after{
   }
 
   /* contact section */
-
 
   .contact__form textarea {
     width: 400px;
