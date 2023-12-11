@@ -285,6 +285,7 @@ label:has(input[type="radio"]:checked){
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   position: relative; 
+  
 }
 
 label:has(input[type="radio"]:checked) + .tabs__content{
